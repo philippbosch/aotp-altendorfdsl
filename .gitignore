@@ -1,0 +1,7 @@
+*.pyc
+secret.txt
+*.sock
+*.pid
+local_settings.py
+settings_local.py
+.DS_Store

@@ -1,0 +1,21 @@
+{% load markup %}<!doctype html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Schnelles Internet für Altendorf-Ersdorf</title>
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/screen.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <header><a href="/"><h1>Initiative<br/>Schnelles Internet für Altendorf-Ersdorf</h1></a></header>
+    <section>
+        {% block content %}
+            {{ text.text|markdown }}
+        {% endblock %}
+    </section>
+    <footer>{% block footer %}<a href="/">Startseite</a> | <a href="{% url show_page 'impressum' %}">Impressum</a>{% endblock %}</footer>
+</body>
+
+</html>

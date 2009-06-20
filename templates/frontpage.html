@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{ block.super }}
+    
+    <form method="post" action="./#support-form" id="support-form">
+        <fieldset>
+            <div class="row text">
+                {{ form.vorname.label_tag }}
+                {{ form.vorname }}
+                {{ form.vorname.errors }}
+            </div>
+            <div class="row text">
+                {{ form.nachname.label_tag }}
+                {{ form.nachname }}
+                {{ form.nachname.errors }}
+            </div>
+            <div class="row text">
+                {{ form.strasse.label_tag }}
+                {{ form.strasse }}
+                {{ form.strasse.errors }}
+            </div>
+            <div class="row text">
+                <label for="id_{{ form.plz.name }}">{{ form.plz.label }}/{{ form.ort.label }}</label>
+                {{ form.plz }}{{ form.ort}}
+                {{ form.plz.errors }}{{ form.ort.errors }}
+            </div>
+            <div class="row text">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+                {{ form.email.errors }}
+            </div>
+            <div class="row buttons">
+                <input type="submit" value="Eintragen" class="button" />
+            </div>
+            
+        </fieldset>
+    </form>
+{% endblock %}
+
+{% block footer %}<a href="{% url show_page 'impressum' %}">Impressum</a>{% endblock %}

@@ -1,0 +1,132 @@
+body {
+    background: #FFF;
+    color: #666;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    margin: 120px 100px;
+}
+
+body.mceContentBody {
+    margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote, form {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 2em;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+ul, ol {
+    margin-left: 2em;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+}
+
+a {
+    color: #0077BB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/* FORM */
+
+form {
+    background: #eee;
+    padding: 1em 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+div.row {
+    margin: 0.5em auto;
+    position: relative;
+    width: 536px;
+}
+
+label {
+    display: block;
+    width: 120px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div.text input {
+    width: 360px;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #999;
+}
+
+div.text input:focus {
+    outline: 2px solid #7FBBDD;
+}
+
+#id_plz {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#id_ort {
+    width: 294px;
+}
+
+div.buttons {
+    margin-top: 20px;
+}
+
+input.button {
+    background: #0077BB;
+    color: #FFF;
+    padding: 4px 8px;
+    border: 2px outset #0077BB;
+    margin-left: 130px;
+}
+
+ul.errorlist {
+    margin: 0;
+    margin-left: 130px;
+}
+
+ul.errorlist li {
+    margin: 0;
+    list-style: none;
+    font-size: 80%;
+    color: #BB0000;
+}
