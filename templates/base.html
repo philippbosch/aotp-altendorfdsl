@@ -6,13 +6,15 @@
     <title>{% block title %}Schnelles Internet für Altendorf-Ersdorf{% endblock %}</title>
     <link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{ MEDIA_URL }}css/screen.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/image-captions.js"></script>
 </head>
 
 <body>
     <header><a href="/"><h1>Initiative<br/>Schnelles Internet für Altendorf-Ersdorf</h1></a></header>
     <section>
         {% block content %}
-            {{ text.text|markdown }}
+            <div id="content">{{ text.text|safe }}</div>
         {% endblock %}
     </section>
     <footer>{% block footer %}<a href="/">Startseite</a> | <a href="{% url show_page 'impressum' %}">Impressum</a>{% endblock %}</footer>

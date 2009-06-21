@@ -130,3 +130,26 @@ ul.errorlist li {
     font-size: 80%;
     color: #BB0000;
 }
+
+div.image {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#content img {
+    border: 1px solid #999;
+}
+
+div.image.left {
+    float: left;
+    margin-right: 20px;
+}
+
+div.image.right {
+    float: right;
+    margin-left: 20px;
+}
+
+div.image-caption {
+    font-size: 75%;
+}

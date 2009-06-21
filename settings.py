@@ -160,7 +160,7 @@ SOUTH_AUTO_FREEZE_APP = True
 # TINYMCE
 
 TINYMCE_DEFAULT_CONFIG = {
-    'plugins': "paste",
+    'plugins': "paste, advimage",
     'theme': "advanced",
     'custom_shortcuts': False,
     'object_resizing': False,
