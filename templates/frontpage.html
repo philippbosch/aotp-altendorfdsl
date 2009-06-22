@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% load supporters %}
 
 {% block content %}
     {{ block.super }}
-    
     <form method="post" action="./#support-form" id="support-form">
+        <div id="status">Zur Zeit unterstützen bereits <strong>{% get_supporter_count %} Personen</strong> unsere Initiative.</div>
         <fieldset>
             <div class="row text">
                 {{ form.vorname.label_tag }}

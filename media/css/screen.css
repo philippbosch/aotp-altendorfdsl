@@ -22,8 +22,10 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 h1 {
     font-size: 150%;
     font-weight: bold;
-    color: #000;
+    background: #0077BB;
+    color: #FFF;
     line-height: 1.2;
+    padding: 8px 12px;
 }
 
 h2 {
@@ -68,9 +70,16 @@ a {
 
 form {
     background: #eee;
-    padding: 1em 0;
-    border-top: 1px solid #999;
+    padding-bottom: 1em;
     border-bottom: 1px solid #999;
+}
+
+#status {
+    padding: 1em 0;
+    margin-bottom: 1em;
+    text-align: center;
+    background: #999;
+    color: #FFF;
 }
 
 div.row {
