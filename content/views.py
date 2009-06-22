@@ -30,7 +30,7 @@ def show_page(request, slug, template='default.html', form=None):
                 t = Template(mailtext.text)
                 c = Context({'confirm_link': 'http://%(hostname)s%(url)s' % {'hostname': request.META['HTTP_HOST'], 'url': reverse('support_confirm', kwargs={'id': supporter.id, 'hash': hashlib.sha224(str(supporter.id) + settings.SECRET_KEY).hexdigest()})}, 'request': request})
                 html = t.render(c)
-                msg = EmailMultiAlternatives(mailtext.title, decode_htmlentities(strip_tags(html)), 'info@dsl-altendort-ersdorf.de', [supporter.email])
+                msg = EmailMultiAlternatives(mailtext.title, decode_htmlentities(strip_tags(html)), 'Initiative Schnelles Internet Altendorf-Ersdorf <bitte.nicht.antworten@dsl-altendort-ersdorf.de>', [supporter.email])
                 msg.attach_alternative(html, "text/html")
                 msg.send()
                 return HttpResponseRedirect(reverse('show_page', kwargs={'slug':'danke'}))
