@@ -9,6 +9,7 @@ class Supporter(models.Model):
     ort = models.CharField(max_length=100, verbose_name="Ort")
     email = models.EmailField(verbose_name="E-Mail")
     verified = models.BooleanField(verbose_name="Bestätigt?")
+    date_registered = models.DateTimeField(auto_now_add=True, verbose_name="Registrierungsdatum")
     
     def __unicode__(self):
         return '%s %s' % (self.vorname, self.nachname)
