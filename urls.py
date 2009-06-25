@@ -6,6 +6,9 @@ from django.contrib import admin
 
 admin.autodiscover()
 
+# needed for some admin links (logout...) until http://code.djangoproject.com/ticket/10061 is fixed
+admin.site.root_path = '/admin/'
+
 urlpatterns = patterns('',
     (r'^admin/filebrowser/', include('filebrowser.urls')),
     (r'^admin/', include(admin.site.urls)),
